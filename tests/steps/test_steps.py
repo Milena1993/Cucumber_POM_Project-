@@ -23,25 +23,35 @@ def login(setup):
     loginPage.bank_manager_login()
 
 @when("I fill up all the required fields and click on Add Customer button")
-@when("I search the new created customer by any parameter")
-@then("I assert that the customer is added with correct info")
-def add_search_customer(setup):
+def add_customer(setup):
     addUser = AddUser(setup)
-    first_name = addUser.add_customer_firstname()
-    last_name = addUser.add_customer_lastname()
-    postal_code = addUser.add_customer_postcode()
-    customerPage = Customerpage(setup)
-    customerPage.search_customers(first_name)
-    assert first_name == customerPage.table_firstname()
-    assert last_name == customerPage.table_lastname()
-    assert postal_code == customerPage.table_postcode()
-   
+    addUser.add_customer_firstname()
+    addUser.add_customer_lastname()
+    addUser.add_customer_postcode()
 
+@when("I search the new created customer by any parameter")
+def search_customer(setup):
+    addUser = AddUser(setup)
+    customerPage = Customerpage(setup)
+    customerPage.search_customers(addUser.add_customer_firstname())
+
+@then("I assert that the customer is added with correct info") 
+def customer_info_check(setup):
+    addUser = AddUser(setup)
+    customerPage = Customerpage(setup)
+    assert addUser.add_customer_firstname() == customerPage.table_firstname()
+    assert addUser.add_customer_lastname() == customerPage.table_lastname()
+    assert  addUser.add_customer_postcode()== customerPage.table_postcode()
+   
 @when("I delete the customer by click on Delete button")
-@then("I assert that the customer information is deleted")
-def delete_customer(setup):
+def delete_user(self):
     deleteUser = DeleteUser(setup)
     deleteUser.delete_customer()
+
+
+@then("I assert that the customer information is deleted")
+def deleted_customer_check(setup):
+    deleteUser = DeleteUser(setup)
     assert deleteUser.table_existing_check() == None
   
     
