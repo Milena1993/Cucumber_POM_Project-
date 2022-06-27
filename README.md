@@ -17,7 +17,7 @@ git clone git@github.com:Milena1993/Cucumber_POM_Project-.git
 
 Run tests using: 
 ```shell
- python -m pytest -v tests/test_cases.py
+  python -m pytest -s tests/steps/test_steps.py
 ```
 Run tests including all the print statments using:
 ```shell
