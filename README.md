@@ -12,7 +12,12 @@ git clone git@github.com:Milena1993/Cucumber_POM_Project-.git
 
 ## Using Python Selenium with Pytest
 ### Install pytest and pytest bdd 
-
+```shell
+  pip install pytest 
+```
+```shell
+  pip install pytest bdd
+```
 **NOTE**: This step can be skipped if you've cloned the repository and install all Python dependencies.
 
 Run tests using: 
