@@ -9,6 +9,9 @@ You can get a copy of all files used in this tutorial by cloning this repository
 ```shell
 git clone git@github.com:Milena1993/Cucumber_POM_Project-.git
 ```
+Running `tests` requires:
+
+* Python 3.9 (tested under Python 3.9.6)
 
 ## Using Python Selenium with Pytest
 ### Install pytest and pytest bdd 
