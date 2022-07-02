@@ -19,8 +19,7 @@ pip install python
 ```
 The project is created under Python 3.9.6)
 
-## Using Python Selenium with Pytest
-### Install pytest and pytest bdd 
+### To use Cucumber and Pytest install pytest and pytest bdd 
 
 ```shell
   pip install pytest 
