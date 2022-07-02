@@ -20,7 +20,7 @@ pip install python
 ```shell
 pip install Faker
 ```
-The project is created under Python 3.9.6)
+The project is created under Python 3.9.6
 
 ### To use Cucumber and Gerkin with pytest install 
 
@@ -43,11 +43,11 @@ Run tests including all the print statments using:
 ```shell
  python -m pytest -s 
 ```
-Run tests in parallel first install pytest xdist 
+Run tests in parallel first install pytest xdist:
 ```shell
 pip install pytest-xdist
 ```
-Run tests using 
+Run tests in parallel using:
 ```shell
 python -m pytest -n 4
 ```
