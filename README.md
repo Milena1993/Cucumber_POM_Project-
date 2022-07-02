@@ -17,6 +17,9 @@ pip install selenium
 ```shell
 pip install python
 ```
+```shell
+pip install Faker
+```
 The project is created under Python 3.9.6)
 
 ### To use Cucumber and Gerkin with pytest install 
