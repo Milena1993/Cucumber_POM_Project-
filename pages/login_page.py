@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 import re
 
+
 class LoginPage:
     button_manager_login_button = (By.XPATH,'//button[@ng-click="manager()"]')  
     add_customer_button =  (By.XPATH, '//button[@ng-click="addCust()"]')
@@ -18,6 +19,4 @@ class LoginPage:
     def bank_manager_login(self):
         self.driver.find_element(*LoginPage.button_manager_login_button).click()
         self.driver.find_element(*LoginPage.add_customer_button).click()
-        
-
 
