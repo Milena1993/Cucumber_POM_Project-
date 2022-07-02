@@ -25,23 +25,23 @@ The project is created under Python 3.9.6
 ### To use Cucumber and Gerkin with pytest install 
 
 ```shell
-  pip install pytest 
+pip install pytest 
 ```
 ```shell
-  pip install pytest bdd
+pip install pytest bdd
 ```
 ```shell
-  pip install gherkin-official
+pip install gherkin-official
 ```
 **NOTE**: This step can be skipped if you've cloned the repository and install all Python dependencies.
 
 Run tests using: 
 ```shell
-  python -m pytest -v 
+python -m pytest -v 
 ```
 Run tests including all the print statments using:
 ```shell
- python -m pytest -s 
+python -m pytest -s 
 ```
 Run tests in parallel first install pytest xdist:
 ```shell
