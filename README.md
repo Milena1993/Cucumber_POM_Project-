@@ -40,10 +40,11 @@ Run tests including all the print statments using:
 ```shell
  python -m pytest -s 
 ```
-Run tests in parallel using instal pytest xdist 
+Run tests in parallel first install pytest xdist 
 ```shell
-pip install pytest-
+pip install pytest-xdist
 ```
+Run tests using 
 ```shell
- python -m pytest -n 4
+python -m pytest -n 4
 ```
