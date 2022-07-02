@@ -14,6 +14,7 @@ The first required modules are
 ```shell
 pip install selenium
 ```
+```shell
 pip install python
 ```
 The project is created under Python 3.9.6)
